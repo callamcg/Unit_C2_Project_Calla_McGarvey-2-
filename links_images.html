@@ -1,0 +1,89 @@
+<!--verified-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Adding Links and Images</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="Calla McGarvey" content="Page inside of the website with the goal of teaching users how to add links and images to their webpage allowing for interactive and engaging sites.">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+    <style>
+      img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      h1, p, div {
+        text-align: center;
+      }
+      </style>
+  </head>
+
+<body style="background-color:#CBFFF0;">
+  <nav style="background-image: url('https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg');">
+    <a style="color:white;" href="/index.html">Home</a>
+    <a style="color:white;" href="/page2.html">Other page</a>
+    <a style="color:white;" href="/lists.html">Learning to List</a>
+    <a style="color:black;" href="/" aria-current="page">Adding Links and Images</a>
+    <a style="color:white;" href="/tables.html"> Creating Tables</a>
+    <a style="color:white;" href="/iframes.html">Inserting Iframes</a>
+    <a style="color:white;" href="/formatting.html">Freshly Formatted</a>
+    <a style="color:white;" href="/verify.html">Verify Code</a>
+    </nav>
+      <main>
+        <h1>Adding Links and Images</h1>
+        <p><a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">Gmail</a></p>
+     <p><a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">NY Times Wordle</a></p>
+     <p><a href="https://www.youtube.com" target="_blank">Youtube</a>
+     </p>
+     <div class="row">
+      <div class="column">
+        <img src="https://www.thespruce.com/thmb/0k8tYA_KxsO4IMlmiep1KclB2UQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/blueberries-vaccinium-spp-3269245-01-42fb9fde200d4c05a2a5d3c6e94a0bf2.jpg" alt="A picture of Blueberries" width="200">
+      </div>
+      <div class="column">
+        <img src="https://www.mariowiki.com/images/4/44/Mario64run.jpg" alt="Cartoon Charater Mario" width="200">
+      </div>
+      <div class="column">
+        <img src="https://www.bosshammerco.com/cdn/shop/products/pro-series-cerakoter-titanium-hammer-titanium-boss-hammer-co-14-oz-smooth-blue-888418_2048x2048.jpg?v=1674607857" alt="A blue hammer" width="200">
+      </div>
+    </div>
+      </main>
+
+      <hr>
+      <b>Links and Images</b> are necesarry to help your page be interactive and engaging. Links can also help people easily navigate a website with multiple files. Images are a fun way to capture your audience's attention. They also help to break down the content of the page, and often offer another way to understand the topic you are discussing. 
+     
+      <h2>Links</h2>
+      <pre>
+      &lt;a href=“<i>pathtoFile</i>”&gt;<i>LinkText</i>&lt;/a&gt;
+      <b>Absolute or external link:</b>
+      &lt;a href=“<i>https://google.com</i>”&gt;<i>Google</i>&lt;/a&gt;
+      <b>Relative or internal link:</b>
+      &lt;a href=“<i>/index.html</i>”&gt;<i>Home Page</i>&lt;/a&gt;
+      </pre>
+
+       <h2>Images</h2>
+       <pre>
+       Embedded using &lt;img&gt; element
+       Use src attribute to locate the image
+       Use alt attribute to describe the image for screen readers
+       Ex. Local image
+       &lt;img src=“happyface,jpg” alt=”Smiley Face”&gt;
+       Remote image
+       &lt;img src=“https://ex.com?hf.jpg” alt=”Smiley Face”&gt;
+       Sizing Images
+       You can control the size of images by using either width or height attributes, or both. The actual dimensions are specified in pixels.
+       If you only specify height or width, the image will scale proportionally. If you specify both, the image will fix itself to the dimensions you choose. 
+       Ex. 
+       &lt;img&gt; src="https://www.thespruce.com/thmb/0k8tYA_KxsO4IMlmiep1KclB2UQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/blueberries-vaccinium-spp-3269245-01-42fb9fde200d4c05a2a5d3c6e94a0bf2.jpg" alt="A picture of Blueberries" height=300 width=450&gt;&lt;/img&gt;
+       </pre>
+    
+    <h2>Targets for Links</h2>
+    <pre>
+      Some targets you can use for links are:
+      <b>_blank:</b> opens in a new window/tab
+      <b>_top:</b> opens at the top of the page
+      In your code this can look like: &lt;a href=“<i>pathtoFile</i>” <b>target="_blank"</b>&gt;<i>LinkText</i>&lt;/a&gt;
+    </pre>
+  </body>
+</html>

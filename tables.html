@@ -1,0 +1,73 @@
+<!--verified-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tables in HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="Calla McGarvey" content="Page in a website that shows users how to create tables">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+    <style>
+      img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      h1, p, div {
+        text-align: center;
+      }
+      </style>
+  </head>
+
+<body style="background-color:#FFD5EE;">
+  <nav style="background-image: url('https://canto-wp-media.s3.amazonaws.com/app/uploads/2019/07/19194417/insert-image-html.jpg');">
+    <a style="color:white;" href="/index.html">Home</a>
+    <a style="color:white;" href="/page2.html">Other page</a>
+    <a style="color:white;" href="/lists.html">Learning to List</a>
+    <a style="color:white;" href="/links_images.html">Adding Links and Images</a>
+    <a style="color:black;" href="/" aria-current="page"> Creating Tables</a>
+    <a style="color:white;" href="/iframes.html">Inserting Iframes</a>
+    <a style="color:white;" href="/formatting.html">Freshly Formatted</a>
+    <a style="color:white;" href="/verify.html">Verify Code</a>
+    </nav>
+    <main>
+      <h1>Creating Tables using HTML</h1>
+      <img src="https://www.pngplay.com/wp-content/uploads/2/Table-Transparent-Background.png" alt="Wooden Table" width="500">
+
+    </main>
+      <hr>
+      <h2>Tables </h2>
+      Tables are helpfult for organize data in a webpage. For example, they can be used to organize scietific data from experiments, show voting results, or put multiple picies of information into rows and coloums.
+    <pre>
+ &lt;table&gt; <i>container for all table data</i>
+   &lt;tr&gt;
+      &lt;th&gt;<i>Name</i> &lt;/th&gt;
+      &lt;th&gt;<i>Points</i> &lt;/th&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt;<i>Karel</i>&lt;/td&gt;
+      &lt;td&gt;<i>31</i>&lt;/td&gt;
+   &lt;/tr&gt;
+ &lt;/table&gt;
+
+<mark>In addition to HTML, a code writer will need a minimal amount of CSS to create boarders around the table, allowing it to be visible in the webpage.</mark>
+This CSS can be inserted as:
+table, th, td {
+    border:1px solid black;
+  }
+    </pre>
+    A table should look like:
+    <table>
+      <tr>
+         <th>Name </th>
+         <th>Points </th>
+      </tr>
+      <tr>
+         <td>Karel</td>
+         <td>31</td>
+      </tr>
+    </table>
+
+  </body>
+</html>
